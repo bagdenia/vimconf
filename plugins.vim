@@ -16,6 +16,12 @@ nnoremap <Leader>bu :call BundleReloadAndRun("BundleInstall!")<CR>
 nnoremap <Leader>bc :call BundleReloadAndRun("BundleClean")<CR>
 
 " ---------------
+" sneak.vim
+" ---------------
+" Disables space mappings in select mode to fix snipMate.
+let g:sneak#streak = 1
+
+" ---------------
 " space.vim
 " ---------------
 " Disables space mappings in select mode to fix snipMate.
@@ -127,8 +133,8 @@ endif
 " ---------------
 " airline
 " ---------------
-let g:airline_theme = 'jellybeans'
-let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
+let g:airline_powerline_fonts = 0
 let g:airline_detect_modified = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#hunks#enabled = 0

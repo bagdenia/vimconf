@@ -89,12 +89,6 @@ vnoremap <C-k> 15gkzz
 " Insert Mode Mappings
 " ---------------
 
-" Let's make escape better, together.
-inoremap jk <Esc>
-inoremap JK <Esc>
-inoremap Jk <Esc>
-inoremap jK <Esc>
-
 " ---------------
 " Leader Mappings
 " ---------------
@@ -145,13 +139,9 @@ nnoremap <silent> <leader>sc :close<CR>
 " Typo Fixes
 " ---------------
 
-noremap <F1> <Esc>
-inoremap <F1> <Esc>
-cnoremap w' w<CR>
-
 " Disable the ever-annoying Ex mode shortcut key. Type visual my ass. Instead,
 " make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
-nnoremap Q @@
+nnoremap Q @q
 
 " Removes doc lookup mapping because it's easy to fat finger and never useful.
 nnoremap K k

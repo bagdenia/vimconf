@@ -5,6 +5,7 @@
 " ---------------
 " Color
 " ---------------
+set term=xterm-256color
 set background=dark
 colorscheme jellybeans
 " Force 256 color mode if available

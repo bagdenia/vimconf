@@ -17,6 +17,8 @@ Bundle 'gmarik/vundle'
 
 " Navigation
 Bundle 'ZoomWin'
+Bundle 'christoomey/vim-space'
+Bundle 'justinmk/vim-sneak'
 Bundle 'kien/ctrlp.vim'
 " UI Additions
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -55,7 +57,7 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'dsawardekar/portkey'
 Bundle 'dsawardekar/ember.vim'
-Bundle 'rizzatti/dash.vim'
+" Bundle 'rizzatti/dash.vim'
 " Automatic Helpers
 Bundle 'osyo-manga/vim-anzu'
 Bundle 'xolox/vim-session'
@@ -106,3 +108,6 @@ Bundle 'tpope/vim-repeat'
 Bundle 'mattn/webapi-vim'
 Bundle 'xolox/vim-misc'
 Bundle 'rizzatti/funcoo.vim'
+
+Bundle 'gregsexton/gitv'
+Bundle 'tacahiroy/ctrlp-funky'
