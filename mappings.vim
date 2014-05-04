@@ -29,6 +29,10 @@ nnoremap Y y$
 noremap H ^
 noremap L $
 
+" Add line splitting instead of doc lookup
+nnoremap K k
+vnoremap K k
+
 " Create newlines without entering insert mode
 nnoremap go o<Esc>k
 nnoremap gO O<Esc>j
@@ -142,10 +146,6 @@ nnoremap <silent> <leader>sc :close<CR>
 " Disable the ever-annoying Ex mode shortcut key. Type visual my ass. Instead,
 " make Q repeat the last macro instead. *hat tip* http://vimbits.com/bits/263
 nnoremap Q @q
-
-" Removes doc lookup mapping because it's easy to fat finger and never useful.
-nnoremap K k
-vnoremap K k
 
 " Toggle paste mode with F5
 nnoremap <silent> <F5> :set paste!<CR>

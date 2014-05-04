@@ -24,3 +24,5 @@ source ~/.vim/plugins.vim
 source ~/.vim/functions.vim
 " Auto commands.
 source ~/.vim/autocmds.vim
+" My own tweaks
+source ~/.vim/mine.vim

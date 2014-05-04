@@ -2,6 +2,9 @@
 " Regular Vim Configuration (No Plugins Needed)
 " ---------------------------------------------
 
+"mine additions
+set t_ut=256
+
 " ---------------
 " Color
 " ---------------
@@ -51,7 +54,9 @@ endif
 " Behaviors
 " ---------------
 syntax enable
-set backup             " Turn on backups
+set nobackup           " Turn off backups
+set noswapfile
+" set nowritebackup
 set autoread           " Automatically reload changes if detected
 set wildmenu           " Turn on WiLd menu
 set hidden             " Change buffer - without saving

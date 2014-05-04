@@ -14,11 +14,37 @@ Plugin 'gmarik/vundle'
 " -------
 " Plugins
 " -------
+" Mine
+Plugin 'gregsexton/gitv'
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-unimpaired'
+" Plugin 'jpalardy/vim-slime'
+" Plugin 'mileszs/ack.vim'
+
+" Languages
+Plugin 'slim-template/vim-slim'
+
+" Text Objects
+Plugin 'kana/vim-textobj-user'
+Plugin 'argtextobj.vim'
+Plugin 'austintaylor/vim-indentobject'
+Plugin 'bootleq/vim-textobj-rubysymbol'
+Plugin 'coderifous/textobj-word-column.vim'
+Plugin 'kana/vim-textobj-datetime'
+Plugin 'kana/vim-textobj-entire'
+Plugin 'kana/vim-textobj-function'
+Plugin 'lucapette/vim-textobj-underscore'
+"Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'thinca/vim-textobj-function-javascript'
+Plugin 'vim-indent-object'
+"------------------------------------
 
 " Navigation
 Plugin 'ZoomWin'
 Plugin 'christoomey/vim-space'
-Plugin 'justinmk/vim-sneak'
+" Plugin 'justinmk/vim-sneak'
 Plugin 'kien/ctrlp.vim'
 " UI Additions
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -101,14 +127,9 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'digitaltoad/vim-jade'
 " MatchIt
 Plugin 'matchit.zip'
-Plugin 'kana/vim-textobj-user'
-Plugin 'nelstrom/vim-textobj-rubyblock'
 " Libraries
 Plugin 'L9'
 Plugin 'tpope/vim-repeat'
 Plugin 'mattn/webapi-vim'
 Plugin 'xolox/vim-misc'
 Plugin 'rizzatti/funcoo.vim'
-
-Plugin 'gregsexton/gitv'
-Plugin 'tacahiroy/ctrlp-funky'

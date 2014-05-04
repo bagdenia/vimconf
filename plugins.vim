@@ -166,6 +166,7 @@ hi! link cssAttr Constant
 " ---------------
 nnoremap <silent> <leader>as :AgFromSearch<CR>
 nnoremap <leader>ag :Ag<space>
+nnoremap <leader>H *<C-O>:AgFromSearch<CR>
 
 " ---------------
 " surround.vim
@@ -434,8 +435,8 @@ let g:turbux_command_cucumber = 'spring cucumber'
 " tcomment_vim
 " ---------------
 let g:tcommentMaps = 0
-nnoremap <silent><leader>cc :TComment<CR>
-vnoremap <silent><leader>cc :TComment<CR>
+nnoremap <silent><leader>c :TComment<CR>
+vnoremap <silent><leader>c :TComment<CR>
 nnoremap <silent><leader>cb :TCommentBlock<CR>
 vnoremap <silent><leader>cb :TCommentBlock<CR>
 
