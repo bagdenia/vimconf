@@ -151,4 +151,4 @@ vnoremap K k
 nnoremap <silent> <F5> :set paste!<CR>
 
 " Insert date
-inoremap ddate <C-R>=strftime("%Y-%m-%d")<CR>
+iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
