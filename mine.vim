@@ -1,8 +1,8 @@
 " copy paste
 nnoremap <C-c> "+y
 vnoremap <C-c> "+y
-" nnoremap <C-v> "+gP
-" vnoremap <C-v> "+gP
+nnoremap <C-v> "+gP
+vnoremap <C-v> "+gP
 
 "nnoremap <C-/> <Plug>NERDCommenterToggle
 "vnoremap <C-/> <Plug>NERDCommenterToggle
