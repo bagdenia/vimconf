@@ -46,7 +46,7 @@ let g:syntastic_full_redraws = 1
 " ---------------
 " NERDTree
 " ---------------
-nnoremap <leader>nn :NERDTreeToggle<CR>
+nnoremap <leader>n  :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeChDirMode = 1

@@ -1,3 +1,14 @@
+" automatically reload this file when it's saved
+au BufWritePost mine.vim so ~/.vim/mine.vim
+
+set splitright
+set splitbelow
+
+set cursorline
+" Only have cursorline in current window
+autocmd WinLeave * set nocursorline
+autocmd WinEnter * set cursorline
+
 " copy paste
 nnoremap <C-c> "+y
 vnoremap <C-c> "+y
@@ -17,18 +28,6 @@ nmap ,rf ?\sit\\|\sspecify\\|describe <CR>$Bhi, :focus<Esc>``,/
 nmap ,ru ?, :focus<CR>:s/, :focus//<CR>``,/
 nmap ,rua :%s/, :focus//g<CR>
 
-
-"  nnoremap <silent> g4 :wincmd b<CR>
-" -nnoremap <silent> gt g2<Bar>:wincmd h<CR>
-" +"nnoremap <silent> gt g2<Bar>:wincmd h<CR>
-" +nnoremap <silent> gt :wincmd b<Bar>:wincmd h<CR>
-" -nnoremap <silent> gb g3<Bar>:wincmd l<CR>
-" +nnoremap <silent> gb :wincmd t<Bar>:wincmd l<CR>
-"
- " Previous Window
-"  nnoremap <silent> gp :wincmd p<CR>
-
-
 " nnoremap ,re :SlimeSend1 exit<CR>
 " nnoremap ,rs :SlimeSend1 setenv rake<CR>
 " nnoremap ,r :SlimeParagraphSend<CR>
@@ -43,3 +42,13 @@ nmap ,rua :%s/, :focus//g<CR>
 "  nnoremap \ H:call EasyMotion#WB(0,0)<CR>
 
 
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
+
+" Use sane regexes
+nnoremap / /\v
+vnoremap / /\v
+
+" Show Git diff in window split when commiting
+" autocmd FileType gitcommit DiffGitCached | wincmd p
