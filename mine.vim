@@ -3,20 +3,21 @@ au BufWritePost mine.vim so ~/.vim/mine.vim
 
 set splitright
 set splitbelow
+nnoremap <leader>gs :set nosplitbelow<bar>:Gstatus<bar>:set splitbelow<CR>
 
 set cursorline
 " Only have cursorline in current window
 autocmd WinLeave * set nocursorline
 autocmd WinEnter * set cursorline
+set cursorcolumn
+autocmd WinLeave * set nocursorcolumn
+autocmd WinEnter * set cursorcolumn
 
 " copy paste
 nnoremap <C-c> "+y
 vnoremap <C-c> "+y
 nnoremap <C-v> "+gP
 vnoremap <C-v> "+gP
-
-"nnoremap <C-/> <Plug>NERDCommenterToggle
-"vnoremap <C-/> <Plug>NERDCommenterToggle
 
 " Ruby development
 nnoremap ,ct :!ctags-bundler

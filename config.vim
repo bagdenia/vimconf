@@ -62,7 +62,11 @@ set wildmenu           " Turn on WiLd menu
 set hidden             " Change buffer - without saving
 set history=768        " Number of things to remember in history.
 set cf                 " Enable error files & error jumping.
-set clipboard+=unnamed " Yanks go on clipboard instead.
+if has('macunix') || has('mac')
+  set clipboard+=unnamed " Yanks go on clipboard instead. Mac.
+elseif has('unix')
+  set clipboard=autoselect,unnamedplus " Yanks go on clipboard instead. Linux
+endif
 set autowrite          " Writes on make/shell commands
 set timeoutlen=450     " Time to wait for a command (after leader for example).
 set nofoldenable       " Disable folding entirely.
