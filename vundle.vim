@@ -19,6 +19,7 @@ Plugin 'gregsexton/gitv'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tommcdo/vim-exchange'
 " Plugin 'jpalardy/vim-slime'
 " Plugin 'mileszs/ack.vim'
 
