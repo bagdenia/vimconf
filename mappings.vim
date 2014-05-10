@@ -14,6 +14,8 @@ let maplocalleader = "\\"
 " Use ; for : in normal and visual mode, less keystrokes
 nnoremap ; :
 vnoremap ; :
+nnoremap : ;
+vnoremap : ;
 
 " Yank entire buffer with gy
 nnoremap gy :%y+<cr>
@@ -30,7 +32,7 @@ noremap H ^
 noremap L $
 
 " Add line splitting instead of doc lookup
-nnoremap K k
+nnoremap K i<CR><Esc>k$
 vnoremap K k
 
 " Create newlines without entering insert mode

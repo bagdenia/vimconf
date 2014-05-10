@@ -29,8 +29,13 @@ nmap ,rf ?\sit\\|\sspecify\\|describe <CR>$Bhi, :focus<Esc>``,/
 nmap ,ru ?, :focus<CR>:s/, :focus//<CR>``,/
 nmap ,rua :%s/, :focus//g<CR>
 
+ "---------------
+ "vim-slime
+ "---------------
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": ":"}
 " nnoremap ,re :SlimeSend1 exit<CR>
-" nnoremap ,rs :SlimeSend1 setenv rake<CR>
+nnoremap ,rs :SlimeSend1 rspec .<CR>
 " nnoremap ,r :SlimeParagraphSend<CR>
 " vnoremap ,r :SlimeRegionSend<CR>
 " vnoremap ,rl V:SlimeRegionSend<CR>
@@ -85,3 +90,17 @@ function! s:NextTextObject(motion, dir)
 
   exe "normal! ".a:dir.c."v".a:motion.c
 endfunction
+
+"---------------
+" Enable Alt- mappings in terminal. Drawback: will break last part of nmap ,bb Obinding.pry<Esc>j
+" http://stackoverflow.com/questions/6778961/alt-key-shortcuts-not-working-on-gnome-terminal-with-vim
+"---------------
+"
+" let c='a'
+" while c <= 'z'
+"   exec "set <A-".c.">=\e".c
+"   exec "imap \e".c." <A-".c.">"
+"   let c = nr2char(1+char2nr(c))
+" endw
+" set timeout ttimeoutlen=50
+

@@ -15,6 +15,8 @@ Plugin 'gmarik/vundle'
 " Plugins
 " -------
 " Mine
+Plugin 'jpalardy/vim-slime'
+" Plugin 'skalnik/vim-vroom'
 Plugin 'gregsexton/gitv'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'tpope/vim-endwise'
@@ -84,7 +86,6 @@ Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'dsawardekar/portkey'
 Plugin 'dsawardekar/ember.vim'
-" Plugin 'rizzatti/dash.vim'
 " Automatic Helpers
 Plugin 'osyo-manga/vim-anzu'
 Plugin 'xolox/vim-session'
