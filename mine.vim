@@ -7,10 +7,11 @@ set splitbelow
 nnoremap <leader>gs :set nosplitbelow<bar>:Gstatus<bar>:set splitbelow<CR>
 function BetterHorizontalSplit ()
   let mega_tmp = winsaveview()
+  let mega_tmp['lnum'] = mega_tmp['topline'] + 4
   split
   :wincmd k
   call winrestview(mega_tmp)
- :wincmd j
+  :wincmd j
 endfunction
 nnoremap ,hs :call BetterHorizontalSplit()<CR>
 
