@@ -184,7 +184,8 @@ function CRWriteIfNecessary()
     " Execute a normal enter when in Quickfix list.
     execute "normal! \<enter>"
   else
-    WriteBufferIfNecessary
+    " was WriteBufferIfNecessary
+    :write
   endif
 endfunction
 
