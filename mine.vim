@@ -4,6 +4,8 @@
 " Fixing vertical and horizontal splits
 set splitright
 set splitbelow
+nnoremap <silent> <leader>hs :split<CR>
+nnoremap <silent> <leader>vs :vsplit<CR>
 nnoremap <leader>gs :set nosplitbelow<bar>:Gstatus<bar>:set splitbelow<CR>
 function BetterHorizontalSplit ()
   let mega_tmp = winsaveview()
