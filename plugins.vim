@@ -16,6 +16,11 @@ nnoremap <Leader>pu :call PluginReloadAndRun("PluginInstall!")<CR>
 nnoremap <Leader>pc :call PluginReloadAndRun("PluginClean")<CR>
 
 " ---------------
+" blockle.vim
+" ---------------
+ let g:blockle_mapping = '<Leader>-'
+
+" ---------------
 " sneak.vim
 " ---------------
 " Disables space mappings in select mode to fix snipMate.
