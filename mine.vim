@@ -1,10 +1,20 @@
 " automatically reload this file when it's saved
-au BufWritePost mine.vim so ~/.vim/mine.vim
+" au BufWritePost mine.vim so ~/.vim/mine.vim
 
+" Fixing vertical and horizontal splits
 set splitright
 set splitbelow
 nnoremap <leader>gs :set nosplitbelow<bar>:Gstatus<bar>:set splitbelow<CR>
+function BetterHorizontalSplit ()
+  let mega_tmp = winsaveview()
+  split
+  :wincmd k
+  call winrestview(mega_tmp)
+ :wincmd j
+endfunction
+nnoremap ,hs :call BetterHorizontalSplit()<CR>
 
+" Enabling cursorlines
 set cursorline
 " Only have cursorline in current window
 autocmd WinLeave * set nocursorline
