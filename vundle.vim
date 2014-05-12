@@ -24,6 +24,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tommcdo/vim-exchange'
 Plugin 'jgdavey/vim-blockle'
 " Plugin 'mileszs/ack.vim'
+Plugin 'powerman/vim-plugin-ruscmd'
 
 " Languages
 Plugin 'slim-template/vim-slim'
