@@ -32,7 +32,7 @@ noremap H ^
 noremap L $
 
 " Add line splitting instead of doc lookup
-nnoremap K i<CR><Esc>k$
+nnoremap K a<CR><Esc>k$
 vnoremap K k
 
 " Create newlines without entering insert mode
