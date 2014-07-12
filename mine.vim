@@ -1,3 +1,6 @@
+let g:syntastic_quiet_messages = {"type": "warnings"}
+let g:syntastic_ruby_mri_args='-T1 -c'
+
 " automatically reload this file when it's saved
 " au BufWritePost mine.vim so ~/.vim/mine.vim
 
