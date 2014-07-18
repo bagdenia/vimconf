@@ -15,6 +15,8 @@ Plugin 'gmarik/vundle'
 " Plugins
 " -------
 " Mine
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
 Plugin 'jpalardy/vim-slime'
 " Plugin 'skalnik/vim-vroom'
 Plugin 'gregsexton/gitv'

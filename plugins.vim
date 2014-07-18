@@ -16,6 +16,20 @@ nnoremap <Leader>pu :call PluginReloadAndRun("PluginInstall!")<CR>
 nnoremap <Leader>pc :call PluginReloadAndRun("PluginClean")<CR>
 
 " ---------------
+" goyo.vim + limelight.vim
+" ---------------
+ let g:limelight_conceal_ctermfg = 240
+ let g:goyo_width = 140
+ nnoremap <Leader><Space> :Goyo<CR>
+ function! GoyoBefore()
+   Limelight
+ endfunction
+ function! GoyoAfter()
+   Limelight!
+ endfunction
+ let g:goyo_callbacks = [function('GoyoBefore'), function('GoyoAfter')]
+
+" ---------------
 " blockle.vim
 " ---------------
  let g:blockle_mapping = '<Leader>-'
