@@ -29,12 +29,6 @@ set cursorcolumn
 autocmd WinLeave * set nocursorcolumn
 autocmd WinEnter * set cursorcolumn
 
-" copy paste
-" nnoremap <C-c> "+y
-" vnoremap <C-c> "+y
-" nnoremap <C-v> "+gP
-" vnoremap <C-v> "+gP
-
 " Ruby development
 nnoremap ,ct :!ctags-bundler
 
@@ -65,12 +59,12 @@ nnoremap ,rs :SlimeSend1 rspec .<CR>
 
 
 " Reselect visual block after indent/outdent
-vnoremap < <gv
-vnoremap > >gv
+" vnoremap < <gv
+" vnoremap > >gv
 
 " Use sane regexes
-nnoremap / /\v
-vnoremap / /\v
+" nnoremap / /\v
+" vnoremap / /\v
 
 " Show Git diff in window split when commiting
 " autocmd FileType gitcommit DiffGitCached | wincmd p
