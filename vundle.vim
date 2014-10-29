@@ -28,8 +28,27 @@ Plugin 'jgdavey/vim-blockle'
 " Plugin 'mileszs/ack.vim'
 Plugin 'powerman/vim-plugin-ruscmd'
 
+" Languages - Clojure
+Plugin 'amdt/vim-niji'
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-clojure-highlight'
+Plugin 'guns/vim-slamhound'
+Plugin 'tpope/vim-fireplace'
+Plugin 'honza/vim-clojure-conceal'
+" Plugin 'dgrnbrg/vim-redl'
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+Plugin 'typedclojure/vim-typedclojure'
+
+Plugin 'tpope/vim-afterimage' " edits images
+
 " Languages
 Plugin 'slim-template/vim-slim'
+
+" Languages - OCaml
+Plugin 'the-lambda-church/merlin'
+Plugin 'def-lkb/vimbufsync'
+Plugin 'yssl/qfenter'
 
 " Text Objects
 Plugin 'kana/vim-textobj-user'

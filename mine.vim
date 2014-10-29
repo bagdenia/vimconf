@@ -1,4 +1,4 @@
-let g:syntastic_quiet_messages = {"type": "warnings"}
+" let g:syntastic_quiet_messages = {"type": "warnings"}
 let g:syntastic_ruby_mri_args='-T1 -c'
 
 " automatically reload this file when it's saved
@@ -114,3 +114,11 @@ endfunction
 " endw
 " set timeout ttimeoutlen=50
 
+
+"---------------
+" Merlin for OCaml
+"---------------
+
+" :set rtp+=<SHARE_DIR>/ocamlmerlin/vim
+:set rtp+=~/.opam/4.01.0/share/ocamlmerlin/vim
+let g:syntastic_ocaml_checkers = ['merlin']
