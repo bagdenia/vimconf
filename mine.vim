@@ -122,3 +122,31 @@ endfunction
 " :set rtp+=<SHARE_DIR>/ocamlmerlin/vim
 :set rtp+=~/.opam/4.01.0/share/ocamlmerlin/vim
 let g:syntastic_ocaml_checkers = ['merlin']
+
+
+
+"---------------
+" Clojure
+"---------------
+
+" let g:niji_light_colours = [['red', 'red1'],
+"                            \ ['yellow', 'orange1'],
+"                            \ ['green', 'yellow1'],
+"                            \ ['cyan', 'greenyellow'],
+"                            \ ['magenta', 'green1'],
+"                            \ ['red', 'springgreen1'],
+"                            \ ['yellow', 'cyan1'],
+"                            \ ['green', 'slateblue1'],
+"                            \ ['cyan', 'magenta1'],
+
+let g:niji_light_colours = [['black', 'black'],
+                          \ ['red', 'red3'],
+                          \ ['darkyellow', 'orangered3'],
+                          \ ['darkgreen', 'orange2'],
+                          \ ['blue', 'yellow3'],
+                          \ ['darkmagenta', 'olivedrab4'],
+                          \ ['red', 'green4'],
+                          \ ['darkyellow', 'paleturquoise3'],
+                          \ ['darkgreen', 'deepskyblue4'],
+                          \ ['blue', 'darkslateblue']]
+
