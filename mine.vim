@@ -150,3 +150,4 @@ let g:niji_light_colours = [['black', 'black'],
                           \ ['darkgreen', 'deepskyblue4'],
                           \ ['blue', 'darkslateblue']]
 
+au BufRead,BufNewFile *.cljx       setlocal filetype=clojure
