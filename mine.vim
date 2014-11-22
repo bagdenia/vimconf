@@ -151,3 +151,7 @@ let g:niji_light_colours = [['black', 'black'],
                           \ ['blue', 'darkslateblue']]
 
 au BufRead,BufNewFile *.cljx       setlocal filetype=clojure
+" command! Piggie :Piggieback (cemerick.austin/exec-env)
+" command! Biggie :Piggieback (cemerick.austin/exec-env :exec-cmds ["open" "-ga" "/Applications/Google Chrome.app"])
+command! Wiggie :Piggieback (weasel.repl.websocket/repl-env :ip "0.0.0.0" :port 9001)
+
