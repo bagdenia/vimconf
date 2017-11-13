@@ -26,3 +26,7 @@ source ~/.vim/functions.vim
 source ~/.vim/autocmds.vim
 " My own tweaks
 source ~/.vim/mine.vim
+  
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
