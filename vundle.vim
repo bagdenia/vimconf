@@ -5,10 +5,12 @@
 set nocompatible " be iMproved
 filetype off     " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
 
+call vundle#begin()
 " let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'gmarik/vundle'
 
 " -------
@@ -158,3 +160,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'mattn/webapi-vim'
 Plugin 'xolox/vim-misc'
 Plugin 'rizzatti/funcoo.vim'
+call vundle#end()
+filetype plugin indent on    " requiredn indent on    " required
+
+
