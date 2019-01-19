@@ -30,3 +30,5 @@ source ~/.vim/mine.vim
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+
+let g:syntastic_javascript_checkers = ['eslint']

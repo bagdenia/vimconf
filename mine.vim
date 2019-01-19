@@ -150,8 +150,12 @@ let g:niji_light_colours = [['black', 'black'],
                           \ ['darkgreen', 'deepskyblue4'],
                           \ ['blue', 'darkslateblue']]
 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 au BufRead,BufNewFile *.cljx       setlocal filetype=clojure
 " command! Piggie :Piggieback (cemerick.austin/exec-env)
 " command! Biggie :Piggieback (cemerick.austin/exec-env :exec-cmds ["open" "-ga" "/Applications/Google Chrome.app"])
 command! Wiggie :Piggieback (weasel.repl.websocket/repl-env :ip "0.0.0.0" :port 9001)
-
+command Rb execute ":.! ruby -e 'puts eval(STDIN.first)'"
+command Rc execute ":.! rails runner 'puts eval(STDIN.first)'"
