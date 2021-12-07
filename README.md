@@ -1,4 +1,5 @@
 # The Vim Configuration of Champions
+!!! YouCompleteMe requires python3 updated and properly resolved for macos
 
 ## Installation
 
